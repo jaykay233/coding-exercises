@@ -1,0 +1,18 @@
+uva11383
+la4043
+la2238
+uva11419
+la3415
+la3126
+uva12549
+uva1663
+uva1194 
+spoj muddy fields
+codeforces 1139 E.maximize Max 
+codeforces 687 NP-Hard Problem
+
+如果是二分图的话:
+最大匹配等于最小顶点覆盖
+最大匹配 + 最小边覆盖 = V
+最小顶点覆盖 + 最大独立集 = V
+最大独立集 = V - 最大匹配
