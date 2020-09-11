@@ -2,6 +2,7 @@
     "files.associations": {
         "string": "cpp",
         "vector": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "stack": "cpp"
     }
 }
