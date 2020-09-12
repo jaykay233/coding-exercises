@@ -2,7 +2,7 @@
 using namespace std;
 class Solution{
 public: 
-    int minSwaps(vector<int>& grid){
+    int minSwaps(vector<vector<int>>& grid){
         int n = grid.size();
         vector<int> pos(n,-1);
         for(int i=0;i<n;i++){
