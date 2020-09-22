@@ -3,6 +3,8 @@
         "string": "cpp",
         "vector": "cpp",
         "queue": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "filesystem": "cpp",
+        "iosfwd": "cpp"
     }
 }
