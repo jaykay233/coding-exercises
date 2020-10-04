@@ -15,6 +15,8 @@
  *     const vector<NestedInteger> &getList() const;
  * };
  */
+#include <bits/stdc++.h>
+using namespace std;
 
 class NestedIterator {
 public:
