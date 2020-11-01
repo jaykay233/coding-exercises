@@ -1,2 +1,9 @@
 *.pdf
 *.json
+*.xml
+*.iml
+*.gitignore
+*.in
+*.out
+*.DS_STORE
+*.sh
