@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+//问题拆解，单调栈预处理加上线性dp
+
 class Solution {
 public:
     vector<int> getIndex(vector<int>& order){
