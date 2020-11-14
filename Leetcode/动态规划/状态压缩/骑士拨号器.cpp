@@ -5,7 +5,6 @@ public:
     unordered_map<int,vector<int>> m;
     int n;
     const int mod = 1e9+7;
-    vector<vector<int>> dp;
     int knightDialer(int n) {
         this->n = n;
         m[0] = {4,6};
