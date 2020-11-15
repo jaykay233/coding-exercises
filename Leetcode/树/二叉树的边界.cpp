@@ -10,6 +10,8 @@
  * };
  */
 
+//先把左边除叶子节点边界遍历，再遍历叶子结点，然后再反向用栈遍历右边边界
+
 #include <bits/stdc++.h>
 using namespace std;
 
