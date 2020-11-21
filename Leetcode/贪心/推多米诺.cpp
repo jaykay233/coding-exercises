@@ -1,3 +1,6 @@
+//计算受力
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     string pushDominoes(string dominoes) {
