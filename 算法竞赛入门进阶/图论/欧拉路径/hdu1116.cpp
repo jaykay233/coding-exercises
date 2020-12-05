@@ -17,7 +17,7 @@ int find(int x){
     return tree[x]==x?x:tree[x]=find(tree[x]);
 }
 
-int merge(int a,int b){
+void merge(int a,int b){
     int x=find(a);
     int y=find(b);
     if(x!=y) tree[x]=y;
