@@ -1,3 +1,4 @@
+//就分类讨论 前i个播放中有j首不同的歌
 class Solution {
 public:
     int numMusicPlaylists(int N, int L, int K) {
