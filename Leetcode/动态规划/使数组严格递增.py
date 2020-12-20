@@ -1,3 +1,23 @@
+## 记忆话搜索会超时
+from functools import lru_cache
+class Solution:
+    def makeArrayIncreasing(self, arr1: List[int], arr2: List[int]) -> int:
+        l1, l2 = len(arr1), len(arr2)
+        arr2.sort()
+        
+        @lru_cache(None)
+        def dfs(i1, i2, pre):
+            if i1 >= l1:
+                return 0
+            i2 = bisect.bisect(arr2, pre)
+            return min(1 + dfs(i1 + 1, i2, arr2[i2]) if i2 < l2 else l2+1,\
+                       dfs(i1 + 1, i2, arr1[i1]) if pre < arr1[i1] else l2+1)
+        
+        res = dfs(0, 0, float("-inf"))
+        return -1 if res > l2 else res
+
+
+## ac版本
 class Solution:
     def makeArrayIncreasing(self, arr1: List[int], arr2: List[int]) -> int:
         l1, l2 = len(arr1), len(arr2)
