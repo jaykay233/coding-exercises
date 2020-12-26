@@ -1,3 +1,4 @@
+//说白了就是越靠后越大其实越合算
 class Solution {
 public:
     int smallestFactorization(int a) {
