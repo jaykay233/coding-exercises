@@ -1,4 +1,3 @@
-## 暴力上锁
 from threading import Lock
 class DiningPhilosophers:
     def __init__(self):
