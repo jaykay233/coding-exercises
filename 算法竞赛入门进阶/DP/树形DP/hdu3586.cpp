@@ -49,11 +49,10 @@ int main(){
             add_edge(a,b,c);add_edge(b,a,c);
         }
         int low=1,high=m,mid,ans=-1;
-        while(low<high){
-            mid = (low + high) >> 1;
-            if(check(mid)) {
-                high = mid; 
-            }else low = mid + 1;
+        while(low<=high){ 
+            mid=(low+high)>>1;
+            if(check(mid)){ans=mid;high=mid-1;}
+            else low=mid+1;
         }
         printf("%d\n",ans);
     }
