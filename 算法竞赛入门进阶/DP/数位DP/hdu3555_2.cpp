@@ -4,6 +4,8 @@ typedef long long ll;
 ll dp[20][2],t[20];
 int digit[20];
 
+//state标记前一位是否是4
+
 ll dfs(ll n, int pos,bool state,bool limit){
     if(!pos) return 0;
     if(!limit && ~dp[pos][state]) return dp[pos][state];
