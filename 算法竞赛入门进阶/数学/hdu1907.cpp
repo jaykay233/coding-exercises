@@ -1,3 +1,4 @@
+//nim game，裸题 + 特殊情况判定
 #include <bits/stdc++.h>
 #define INF 1000000000
 #define EPS 1e-6
