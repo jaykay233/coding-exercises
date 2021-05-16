@@ -1,3 +1,4 @@
+//两侧最大中取最小
 #include <bits/stdc++.h>
 using namespace std;
 
