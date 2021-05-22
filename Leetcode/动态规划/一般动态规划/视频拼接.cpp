@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     int videoStitching(vector<vector<int>>& clips, int time) {
