@@ -1,3 +1,4 @@
+//裸的暴力dp和用单调栈优化过的dp
 //https://leetcode-cn.com/problems/minimum-cost-tree-from-leaf-values/
 #include <bits/stdc++.h>
 using namespace std;
