@@ -13,6 +13,6 @@ public:
                 dp[i] = max(dp[i],dp[j-1] + mmax * (i-j+1));
             }
         }
+        return dp[n];    
     }
-    return dp[n];    
-}
+};
