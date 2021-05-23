@@ -13,3 +13,7 @@ public:
         return min(odd,even);
     }
 };
+
+
+//xyxyyx
+//yxyxxy
