@@ -9,6 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+//递归解和循环解
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
@@ -25,3 +26,4 @@ public:
         return flippedLeft;
     }
 };
+
