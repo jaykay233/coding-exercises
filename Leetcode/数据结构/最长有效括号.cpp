@@ -24,6 +24,7 @@ public:
 };
 
 //https://leetcode-cn.com/problems/longest-valid-parentheses/solution/zui-chang-you-xiao-gua-hao-by-leetcode-solution/
+//因为只需要保留其中一个最近的索引，其实并不需要开个数组
 class Solution2{
 public:    
     int longestValidParentheses(string s){
