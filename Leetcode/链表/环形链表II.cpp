@@ -6,6 +6,8 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
