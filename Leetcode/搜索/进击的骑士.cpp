@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution 
 {
 public:
@@ -7,7 +10,6 @@ public:
             return 0;
         x = abs(x);     //都是关于（0,0）对称
         y = abs(y);
-        //---------------------------------------------记忆化 bfs-------------------------------------------------
         queue<pair<int,int>> Q;
         set<pair<int,int>> visited;
         Q.push({0, 0});
