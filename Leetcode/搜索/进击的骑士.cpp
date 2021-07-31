@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+//bfs镜像对称 + 剪枝
 class Solution 
 {
 public:
