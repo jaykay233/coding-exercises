@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+using namespace std;
 class LFUCache {
 public:
     int cap, minFreq;
