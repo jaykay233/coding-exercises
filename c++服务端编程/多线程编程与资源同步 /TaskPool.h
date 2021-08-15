@@ -7,6 +7,7 @@
 #include <iostream>
 
 class Task{
+public:
     virtual void doIt(){
         std::cout<<"handle a task..."<<std::endl;
     }
