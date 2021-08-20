@@ -4,7 +4,7 @@
 #include <cctype>
 namespace FastIO
 {
-char buf[1 << 21], buf2[1 << 21], a[20], *p1 = buf, *p2 = buf, hh = '\n';
+ char buf[1 << 21], buf2[1 << 21], a[20], *p1 = buf, *p2 = buf, hh = '\n';
 int p, p3 = -1;
 void read() {}
 void print() {}
