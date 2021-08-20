@@ -109,5 +109,6 @@
         "span": "cpp",
         "stop_token": "cpp",
         "cassert": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
