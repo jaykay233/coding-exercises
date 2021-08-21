@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+//lazy programmming
+//https://leetcode-cn.com/problems/avoid-flood-in-the-city/solution/avoid-flood-in-the-city-by-ikaruga/
 class Solution{
 public:  
     vector<int> avoidFlood(vector<int>& rains){
