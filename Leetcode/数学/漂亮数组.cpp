@@ -1,3 +1,4 @@
+//https://leetcode-cn.com/problems/beautiful-array/solution/piao-liang-shu-zu-by-leetcode/
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
