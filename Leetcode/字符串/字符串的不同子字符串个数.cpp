@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+using namespace std;
 int trie[250005][26];
 class Solution {
 public:
