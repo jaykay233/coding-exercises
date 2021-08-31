@@ -29,7 +29,6 @@ public:
     }
     
     int helper(int n, const string& s, const string& evil) {
-        // printf("%s\n", s.c_str());
         mst(dp, 0);
         dp[0][0][1] = 1;
         for (int i = 0; i < n; i++) {
@@ -63,7 +62,6 @@ public:
     
     vector<int> next;
  
-    // 求 next 数组
     void build(const string &pattern){
         int n = pattern.length();
         next.resize(n + 1);
