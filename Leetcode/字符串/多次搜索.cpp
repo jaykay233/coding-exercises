@@ -73,7 +73,7 @@ public:
                     jf = f[jf];
                 f[k] = childs[jf][c];
                 Q.push(k);
-            }
+            }   
         }
     }
 };
