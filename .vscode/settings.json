@@ -108,7 +108,8 @@
         "ranges": "cpp",
         "span": "cpp",
         "stop_token": "cpp",
-        "cassert": "cpp"
+        "cassert": "cpp",
+        "unistd.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
