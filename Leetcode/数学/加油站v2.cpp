@@ -1,3 +1,4 @@
+//x如果到不了y,那么x和y中间的任意一段路都到不y
 #include <bits/stdc++.h>
 using namespace std;
 class Solution{
