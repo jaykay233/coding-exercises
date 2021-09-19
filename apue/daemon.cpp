@@ -38,6 +38,7 @@ static int daemonize(){
 
 int main(){
     FILE* fp;
+    int i;
     if(daemonize())
         exit(1);
 
@@ -47,7 +48,7 @@ int main(){
         exit(1);
     }
 
-    while(1){
+    for(i=0;;i++){
         fprintf(fp,"%d\n",i);
         fflush(fp);
         sleep(1);
