@@ -110,7 +110,8 @@
         "stop_token": "cpp",
         "cassert": "cpp",
         "unistd.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "types.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
