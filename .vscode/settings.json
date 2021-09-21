@@ -111,7 +111,8 @@
         "cassert": "cpp",
         "unistd.h": "c",
         "stdlib.h": "c",
-        "types.h": "c"
+        "types.h": "c",
+        "signal.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
