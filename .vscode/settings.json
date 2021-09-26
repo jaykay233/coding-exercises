@@ -112,7 +112,8 @@
         "unistd.h": "c",
         "stdlib.h": "c",
         "types.h": "c",
-        "signal.h": "c"
+        "signal.h": "c",
+        "stat.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
