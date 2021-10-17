@@ -1,11 +1,13 @@
+//https://www.cnblogs.com/sclbgw7/p/9260756.html
+//https://www.cnblogs.com/sclbgw7/p/9875671.html
 #include <bits/stdc++.h>
 using namespace std;
-const int maxn = 1000000 + 100;
-const int maxnode = 1000000 + 100;
-int SIGMA_SIZE = 26;
+#define maxn 1000000 + 100
+#define maxnode 1000000 + 100
+#define  SIGMA_SIZE 26
 int n,ans;
 bool vis[maxn];
-map<string,int> ans;
+map<string,int> ms;
 int ch[maxnode][SIGMA_SIZE + 5];
 int val[maxnode];
 int idx(char c) {
@@ -39,7 +41,7 @@ void print(int j){
     }
 }
 
-int getFail(){
+void getFail(){
     queue<int> q;
     f[0] = 0;
     for(int c =0;c<SIGMA_SIZE;c++){
