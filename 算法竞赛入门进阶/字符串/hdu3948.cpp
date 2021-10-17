@@ -1,3 +1,4 @@
+//https://blog.csdn.net/luyuyingyingying/article/details/107287119?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8.no_search_link
 #include <bits/stdc++.h>
 using namespace std;
 #define mt(x, k) memset(x,k,sizeof(x))
@@ -118,7 +119,7 @@ int main(){
             tmp = lcp(sa[i],n - sa[i]);
             if(tmp > cnt2) ans += tmp - cnt2, cnt2 = tmp;
         }
-        printf("Case: %d:%d\n", j + 1, ans);
+        printf("Case: %d: %d\n", j + 1, ans);
     }
     return 0;
 }
