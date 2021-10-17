@@ -1,5 +1,7 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
+#include <string.h>
+#include <algorithm>
+#include <iostream>
 using namespace std;
 const int N = 1e5 + 10;
 const long long INF =0x7f7f7f7f7f7fll;
@@ -61,31 +63,35 @@ void get_height(char text[],int n)
         height[ Rank[i] ] = k;
     }
 }
-
 char ch[N];
 long long nxt[N];
-int main(){
+int main (void)
+{
     int t;
-    scanf("%d",&t);
-    int cas = 1;
-    while(t--){
+    cin>>t;
+    int cas=1;
+    while(t--)
+    {
         char aim;
-        scanf("%c",&aim);
+        scanf(" %c",&aim);
         scanf("%s",ch);
-        int len = strlen(ch);
+        int len=strlen(ch);
         get_sa(ch,len);
-        get_height(ch, len);
-        long long ans =0 ;
-        int mx = len;
-        for(int i=len-1;i>=0;i--){
-            if(ch[i] == aim){
-                mx= i;
+        get_height(ch,len);
+        long long ans=0;
+        int mx=len;
+        for(int i=len-1;i>=0;i--)
+        {
+            if(ch[i]==aim)
+            {
+                mx=i;
             }
-            nxt[i] = mx;
+            nxt[i]=mx;
         }
         printf("Case #%d: ",cas++);
-        for(int i =0;i<len;i++){
-            ans += len - max(nxt[sa[i]], sa[i] + height[i]);
+        for(int i=0;i<len;i++)
+        {
+            ans+=len-max(nxt[sa[i]],sa[i]+height[i]);
         }
         printf("%lld\n",ans);
     }
