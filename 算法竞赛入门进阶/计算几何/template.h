@@ -21,6 +21,5 @@ Vector Normal(Vector);
 bool Parallel(Vector, Vector); 
 
 struct Line;
-
-
+typedef Line Segment;
 

@@ -90,3 +90,10 @@ struct Line{
         }
     }
 };
+
+int Point_line_relation(Point p, Line v){
+    int c = sgn(Cross(p-v.p1,v.p2-v.p1));
+    if(c<0) return 1;
+    if(c>0) return 2;
+    return 0;
+}
