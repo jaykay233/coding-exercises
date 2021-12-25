@@ -141,3 +141,30 @@ bool Cross_segment(Point a,Point b,Point c,Point d){
     double d1 = Cross(d-c,a-c), d2=Cross(d-c,b-c);
     return sgn(c1) * sgn(c2)<0 && sgn(d1) * sgn(d2)<0;
 }
+
+bool Point_in_polygon(Point pt,Point* p,int n){
+    for(int i =0;i<n;i++){
+        if(p[i]==pt) return 3;
+    }
+    for(int i =0;i<n;i++){
+        Line v = Line(p[i],p[(i+1)%n]);
+        if(Point_on_seg(pt,v)) return 2;
+    }
+    int num = 0;
+    for(int i =0;i<n;i++){
+        int j = (i+1)%n;
+        int c = sgn(Cross(pt-p[j],p[i]-p[j]));
+        int u = sgn(p[i].y - pt.y);
+        int v = sgn(p[j].y - pt.y);
+        if(c>0 && u<0 && v>=0) num++;
+        if(c<0 && u>=0 && v<0) num--;
+    }
+    return num!=0;
+}
+
+double Polygon_area(Point* p, int n){
+    double area=0;
+    for(int i =0;i<n;i+=)
+        area += Cross(p[i],p[(i+1)%n]);
+    retrun area/2;
+}

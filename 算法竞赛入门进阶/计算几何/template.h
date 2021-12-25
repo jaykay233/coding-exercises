@@ -33,3 +33,5 @@ double Dis_point_seg(Point p,Segment v);
 int Line_relation(Line v1, Line v2);
 Point Cross_point(Point a,Point b,Point c,Point d);
 bool Cross_segment(Point a,Point b,Point c,Point d);
+bool Point_in_polygon(Point, Point*, int n);
+double Polygon_area(Point *p, int n);
