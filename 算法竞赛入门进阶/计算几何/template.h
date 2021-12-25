@@ -27,3 +27,4 @@ bool Point_on_seg(Point, Line);
 
 double Dis_point_line(Point,Line);
 Point Point_line_proj(Point,Line);
+Point Point_line_symmetry(Point p,Line v);

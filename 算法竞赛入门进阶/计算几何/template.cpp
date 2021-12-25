@@ -110,3 +110,8 @@ Point Point_line_proj(Point p,Line v){
     double k = Dot(v.p2-v.p1, p-v.p1)/Len2(v.p2-v.p1);
     return v.p1 + (v.p2 - v.p1) * k;
 }
+
+Point Point_line_symmetry(Point p,Line v){
+    Point q = Point_line_proj(p,v);
+    return Point(2*q.x-p.x,2*q.y-p.y);
+}
