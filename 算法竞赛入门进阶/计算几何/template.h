@@ -9,8 +9,16 @@ struct Point;
 
 double Distance(Point, Point);
 double Dist(Point, Point);
-
-
+typedef Point Vector;
+double Dot(Point ,Point);
+double Len(Vector);
+double Len2(Vector);
+double Angle(Vector, Vector);
+double Cross(Vector, Vector);
+double Area2(Point, Point, Point);
+Vector Rotate(Vector, Vector);
+Vector Normal(Vector);
+Vector Parallel(Vector, Vector); 
 
 
 
