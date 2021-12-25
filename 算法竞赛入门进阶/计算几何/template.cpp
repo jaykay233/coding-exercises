@@ -65,3 +65,28 @@ bool Parallel(Vector A,Vector B){
     return sgn(Cross(A,B)) == 0;
 }
 
+struct Line{
+    Point p1,p2;
+    Line(){}
+    Line(Point p1,Point p2):p1(p1),p2(p2){}
+    Line(Point p, double angle){
+        p1=p;
+        if(sgn(angle-pi/2) == 0) {p2=p1+Point(0,1);}
+        else {p2=(p1+Point(1,tan(angle)));}
+    }
+
+    Line(double a,double b,double c){
+        if(sgn(a)==0){
+            p1=Point(0, -c/b);
+            p2=Point(1,-c/b);
+        }
+        else if(sgn(b)==0){
+            p1 = Point(-c/a,0);
+            p2 = Point(-c/a,1);
+        }
+        else{
+            p1 = Point(0, -c/b);
+            p2 = Point(1, (-c-a)/b);
+        }
+    }
+};

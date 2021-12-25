@@ -20,7 +20,7 @@ Vector Rotate(Vector, Vector);
 Vector Normal(Vector);
 Vector Parallel(Vector, Vector); 
 
-
+struct Line;
 
 
 
