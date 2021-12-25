@@ -18,7 +18,7 @@ double Cross(Vector, Vector);
 double Area2(Point, Point, Point);
 Vector Rotate(Vector, Vector);
 Vector Normal(Vector);
-Vector Parallel(Vector, Vector); 
+bool Parallel(Vector, Vector); 
 
 struct Line;
 
