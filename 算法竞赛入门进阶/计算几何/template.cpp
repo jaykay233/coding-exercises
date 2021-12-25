@@ -97,3 +97,16 @@ int Point_line_relation(Point p, Line v){
     if(c>0) return 2;
     return 0;
 }
+
+bool Point_on_seg(Point p, Line v){
+    return sgn(Cross(p-v.p1, v.p2-v.p1))==0 && sgn(Dot(p-v.p1,p-v.p2)) <=0 ;
+}
+
+double Dis_point_line(Point p,Line v){
+    return fabs(Cross(p-v.p1, v.p2-v.p1))/Distance(v.p1,v.p2);
+}
+
+Point Point_line_proj(Point p,Line v){
+    double k = Dot(v.p2-v.p1, p-v.p1)/Len2(v.p2-v.p1);
+    return v.p1 + (v.p2 - v.p1) * k;
+}

@@ -23,3 +23,7 @@ bool Parallel(Vector, Vector);
 struct Line;
 typedef Line Segment;
 
+bool Point_on_seg(Point, Line);
+
+double Dis_point_line(Point,Line);
+Point Point_line_proj(Point,Line);
