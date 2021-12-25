@@ -115,3 +115,29 @@ Point Point_line_symmetry(Point p,Line v){
     Point q = Point_line_proj(p,v);
     return Point(2*q.x-p.x,2*q.y-p.y);
 }
+
+double Dis_point_seg(Point p,Segment v){
+    if(sgn(Dot(p-v.p1,v.p2-v.p1))>0 || sgn(Dot(p-v.p2,v.p1-v.p2))<0 )
+        return min(Distance(p,v.p1), Distance(p,v.p2));
+    return Dis_point_line(p,v);
+}
+
+int Line_relation(Line v1, Line v2){
+    if(sgn(Cross(v1.p2-v1.p1, v2.p2 - v2.p1)) == 0 ){
+        if(Point_line_relation(v1.p1,v2)==0) return 1;
+        else return 0;
+    }
+    return 2;
+}
+
+Point Cross_point(Point a,Point b,Point c,Point d){
+    double s1 = Cross(b-a,c-a);
+    double s2 = Cross(b-a,d-a);
+    return Point(c.x*s2-d.x*s1,c.y*s2-d.y*s1)/(s2-s1);
+}
+
+bool Cross_segment(Point a,Point b,Point c,Point d){
+    double c1 = Cross(b-a,c-a),c2 = Cross(b-a,d-a);
+    double d1 = Cross(d-c,a-c), d2=Cross(d-c,b-c);
+    return sgn(c1) * sgn(c2)<0 && sgn(d1) * sgn(d2)<0;
+}

@@ -28,3 +28,8 @@ bool Point_on_seg(Point, Line);
 double Dis_point_line(Point,Line);
 Point Point_line_proj(Point,Line);
 Point Point_line_symmetry(Point p,Line v);
+
+double Dis_point_seg(Point p,Segment v);
+int Line_relation(Line v1, Line v2);
+Point Cross_point(Point a,Point b,Point c,Point d);
+bool Cross_segment(Point a,Point b,Point c,Point d);
