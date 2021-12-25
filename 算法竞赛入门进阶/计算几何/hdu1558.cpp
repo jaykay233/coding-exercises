@@ -46,6 +46,6 @@ int main(){
             }
         }
         if(tcase)
-            num--;
+            printf("\n");
     }
 }
