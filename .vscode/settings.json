@@ -114,7 +114,8 @@
         "types.h": "c",
         "signal.h": "c",
         "stat.h": "c",
-        "mysem.h": "c"
+        "mysem.h": "c",
+        "*.inc": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
