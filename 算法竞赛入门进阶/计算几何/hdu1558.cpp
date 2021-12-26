@@ -1,3 +1,4 @@
+//https://www.cnblogs.com/liyinggang/p/5475142.html
 #include <bits/stdc++.h>
 #include "template.h"
 using namespace std;
