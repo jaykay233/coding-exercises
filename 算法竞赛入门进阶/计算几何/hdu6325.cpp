@@ -15,8 +15,8 @@ struct Point{
     Point(double x,double y):x(x),y(y) {}
     Point operator + (Point B) {return Point(x+B.x,y+B.y);}
     Point operator - (Point B) {return Point(x-B.x, y - B.y);}
-    bool operator == (Point B) {return sgn(x-B.x) == 0 && sgn(y-B.y)==0;}
-    bool operator < (Point B) {
+    bool operator == (Point B) const {return sgn(x-B.x) == 0 && sgn(y-B.y)==0;}
+    bool operator <(Point B) const  {
         return sgn(x-B.x)<0 || (sgn(x-B.x)==0 && sgn(y-B.y) < 0);
     }
 }p[N], ans[N];
