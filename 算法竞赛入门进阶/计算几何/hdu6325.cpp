@@ -38,7 +38,7 @@ int ConvexHull(Point* p,int n, Point* ch){
     int m = 0;
     for(int i =0;i<n;i++){
         if(i>0 && p[i].x == p[i-1].x) continue;
-        while(m>1 && Cross(ch[m-1],ch[m-2],p[i]-ch[m-2]) > 0) m--;
+        while(m>1 && Cross(ch[m-1]-ch[m-2],p[i]-ch[m-2]) > 0) m--;
         ch[m++] = p[i];
     }
     return m;
