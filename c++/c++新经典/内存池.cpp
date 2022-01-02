@@ -29,3 +29,14 @@ void* A::operator new(size_t size){
     return tmplink;
 }
 
+
+void A::operator delete(void* phead){
+    (static_cast<A*>(phead))->next = m_FreePosi;
+    m_FreePosi = static_cast<A*>(phead);
+}
+
+int A::m_iCount =0 ;
+int A::m_iMallocCount = 0;
+
+A* A::m_FreePosi = nullptr;
+int A::m_sTrunkCount = 5;
