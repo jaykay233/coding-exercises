@@ -115,7 +115,11 @@
         "signal.h": "c",
         "stat.h": "c",
         "mysem.h": "c",
-        "*.inc": "cpp"
+        "*.inc": "cpp",
+        "barrier": "cpp",
+        "latch": "cpp",
+        "semaphore": "cpp",
+        "syncstream": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
