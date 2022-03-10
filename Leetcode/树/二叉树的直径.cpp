@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int res =0 ;
+    int res = 0;
     int diameterOfBinaryTree(TreeNode* root) {
         getLen(root);
         return max(0,res-1);
