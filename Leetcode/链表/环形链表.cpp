@@ -21,3 +21,19 @@ public:
         return false;
     }
 };
+
+
+class SolutionV2 {
+public:
+    bool hasCycle(ListNode *head) {
+        if(!head || !head->next) return false;
+        ListNode* first = head;
+        ListNode* second = head->next;
+        while(second && second->next){
+            if(first==second) return true;
+            first = first->next;
+            second = second->next->next;
+        }   
+        return false;
+    }
+};
