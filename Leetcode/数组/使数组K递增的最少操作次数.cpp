@@ -1,3 +1,4 @@
+//https://leetcode-cn.com/problems/minimum-operations-to-make-the-array-k-increasing/solution/shi-shu-zu-k-di-zeng-de-zui-shao-cao-zuo-3e62/
 class Solution {
 public:
     int kIncreasing(vector<int>& arr, int k) {
