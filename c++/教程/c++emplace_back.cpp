@@ -41,19 +41,26 @@ public:
         vec_ = alloactor_.allocate(size);
         size_ = size;
     }
-    // push_back
-    void push_back(const T& val)
-    {
-        alloactor_.construct(vec_ + idx_, val);
-        idx_ ++;
-    }
+    // // push_back
+    // void push_back(const T& val)
+    // {
+    //     alloactor_.construct(vec_ + idx_, val);
+    //     idx_ ++;
+    // }
 
-    // push_back
-    void push_back(T&& val)
+    // // push_back
+    // void push_back(T&& val)
+    // {
+    //     // 
+    //     alloactor_.construct(vec_+idx_, std::move(val));
+    //     idx_++;
+    // }
+
+    template<typename Type>
+    void push_back(Type&& val)
     {
-        // 
-        alloactor_.construct(vec_+idx_, std::move(val));
-        idx_++;
+        alloactor_.construct(vec_ + idx_, std::forward<Type>(val));
+        idx_ ++ ;
     }
 
     // 1.引用折叠 实参：左值
