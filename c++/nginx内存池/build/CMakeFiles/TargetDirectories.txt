@@ -1,0 +1,3 @@
+/Users/zhiyuan.xu/Downloads/项目/coding-exercises/c++/nginx内存池/build/CMakeFiles/main.dir
+/Users/zhiyuan.xu/Downloads/项目/coding-exercises/c++/nginx内存池/build/CMakeFiles/edit_cache.dir
+/Users/zhiyuan.xu/Downloads/项目/coding-exercises/c++/nginx内存池/build/CMakeFiles/rebuild_cache.dir
